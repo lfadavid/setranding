@@ -1,0 +1,45 @@
+p {
+  font-family: "Source Sans Pro";
+  font-size: 14px;
+  text-align: center;
+}
+text {
+  font-family: "Source Sans Pro";
+  font-size: 12px;
+  text-align: center;
+  color: royalblue;
+}
+h2 {
+  color: rgb(17, 4, 77);
+  text-align: center;
+  font-size: 40px;
+  font-family: "Source Sans Pro";
+}
+b {
+  color: black;
+}
+#GithubIcon {
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+}
+#MainMenu {
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+}
+.st-emotion-cache-1wbqy5l e3g6aar2 {
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+}
+.st-emotion-cache-30do4w e3g6aar1 {
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+}
+.stActionButtonLabel {
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+}
