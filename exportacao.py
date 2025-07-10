@@ -141,10 +141,10 @@ if 'DATA' in df_filtrado.columns and 'STATUS' in df_filtrado.columns:
                     st.error(
                         f"❌ Processo `{processo}` — vencido há {-dias} dias ({data_str})")
                 elif dias == 0:
-                    st.warning(
+                    st.info(
                         f"⚠️ Processo `{processo}` — vence hoje ({data_str})")
                 else:
-                    st.info(
+                    st.warning(
                         f"📅 Processo `{processo}` — faltam {dias} dias ({data_str})")
 
 # Formatar valores
