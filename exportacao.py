@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import pygsheets
 import datetime
-import os
 
 
 def format_number(value, prefix='R$'):
@@ -17,10 +16,10 @@ def format_number(value, prefix='R$'):
 
 @st.cache_resource
 def conectar_planilha():
-    credenciais = pygsheets.authorize(
-        service_file=os.path.join(os.getcwd(), 'cred.json'))
+    gc = pygsheets.authorize(service_account_env_var='gcp_service_account')
+
     url = "https://docs.google.com/spreadsheets/d/1l7G_4VAQGyN9cfmpsS-_bnjfzSqXRJViZMCZ8z6vXSc/edit#gid=0"
-    arquivo = credenciais.open_by_url(url)
+    arquivo = gc.open_by_url(url)
     aba = arquivo.worksheet_by_title("Sertranding")
     return aba
 
